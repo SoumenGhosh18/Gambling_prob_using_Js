@@ -1,6 +1,6 @@
 class GamblingMain{
 main(){
-    console.log("Welcome to")
+    console.log("Welcome to gambling simulation problem");
     const a= require('./GamblingImpl')
     a.bet();
 }
