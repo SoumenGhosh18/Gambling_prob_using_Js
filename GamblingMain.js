@@ -6,5 +6,4 @@ main(){
 }
 }
 const obj = new GamblingMain();
-
 obj.main();
