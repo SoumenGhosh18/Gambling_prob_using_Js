@@ -5,7 +5,7 @@ bet() {
   var day = 1;
   var winAmount;
   var lostAmount;
-  while(day<=20){
+  while(day<=30){
       var winStake = 100;
       var lostStake = 100;
   while(winStake<150 || lostStake>50){
@@ -19,7 +19,8 @@ bet() {
  }
  winAmount=winStake-stake;
  lostAmount=stake-lostStake;
- console.log("Win amount of day....."+winAmount+" and Lost amount of day...."+lostAmount+" in day no :"+day);
+ console.log("Win amount of day....."+winAmount+" and Lost amount of day...."+lostAmount+" in day no :"+day
+               +" " + "So actual gain perday ="+(winAmount-lostAmount));
  day=day+1;
 }
 }
