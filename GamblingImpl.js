@@ -1,27 +1,29 @@
 class GamblingImpl {
     
 bet() {
-    var bet =1;
-    var Stake =100;
-    while(Stake != 150 && Stake !=50)
-    {
-
-    var number = Math.random() *2;
-    if(number <=1){
-          Stake +=bet;
-          console.log("loss");
-        }
-          else{
-            Stake = Stake -bet;
-            console.log("Win");
-        }
-       }
-       if(Stake == 150)
-       console.log("He wins 50% of this stake");
-       else
-       console.log("He lose 50% of his stake");    
-  } 
-}  
+  var stake = 100;
+  var day = 1;
+  var winAmount;
+  var lostAmount;
+  while(day<=20){
+      var winStake = 100;
+      var lostStake = 100;
+  while(winStake<150 || lostStake>50){
+  var number = Math.random() *2;
+  if(number <=1){
+      lostStake = lostStake-1;
+     }
+  else{
+      winStake = winStake+1;
+     }
+ }
+ winAmount=winStake-stake;
+ lostAmount=stake-lostStake;
+ console.log("Win amount of day....."+winAmount+" and Lost amount of day...."+lostAmount+" in day no :"+day);
+ day=day+1;
+}
+}
+}
 module.exports = new GamblingImpl();
 
 
